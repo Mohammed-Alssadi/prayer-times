@@ -7,6 +7,7 @@ html{
  direction: rtl;
 }
 body {
+  font-family: 'Cairo', sans-serif;
   background-image: url('/src/assets/img/bg-D009lZ71.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,6 +42,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.274);
 }
 .city-dropdown .p-dropdown {
+  font-family: 'Cairo', sans-serif;
   font-weight: bold;
   background: rgba(0,0,0,0.35);
   color: #fff;
@@ -49,6 +51,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 /* نص الخيار الظاهر */
 .city-dropdown .p-dropdown-label {
+  font-family: 'Cairo', sans-serif;
   padding: 10px 12px;
   font-size: 18px;
     font-weight: bold;
@@ -64,6 +67,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 /* لوحة الخيارات (panel) */
 .rtl-dropdown.p-dropdown-panel {
+  font-family: 'Cairo', sans-serif;
   direction: rtl;
   backdrop-filter: blur(5px); 
  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
@@ -81,6 +85,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 /* العناصر داخل القائمة */
 .rtl-dropdown .p-dropdown-item {
+  font-family: 'Cairo', sans-serif;
   padding: 10px 14px;
   color: #fff;
  background: transparent;
