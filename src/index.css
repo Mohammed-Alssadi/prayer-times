@@ -7,9 +7,7 @@ html{
  direction: rtl;
 }
 body {
-  /* direction: rtl; */
-  font-family: 'Cairo', sans-serif;
-  background-image: url('/src/assets/img/bg.png');
+  background-image: url('/src/assets/img/bg-D009lZ71.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -17,12 +15,9 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  position: relative; /* needed so pseudo-element sits behind content */
-  z-index: 0;
+  min-height: 100vh;
  
 }
-
-
  body::before{
   content: "";
   position: fixed;
@@ -33,10 +28,7 @@ body {
   pointer-events: none;
   z-index: 0;
 }
-body > *{
-  position: relative;
-  z-index: 1;
-}
+
 .title{
 font-weight: bolder;
   color: #1eec6d;
@@ -73,7 +65,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 /* لوحة الخيارات (panel) */
 .rtl-dropdown.p-dropdown-panel {
   direction: rtl;
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(5px); 
  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius: 8px;
   padding: 6px 8px;
@@ -118,7 +110,6 @@ border: none !important;
   overflow-y: auto;
   padding-right: 4px;
 }
-
 /* تخصيص شريط التمرير (WebKit) */
 .rtl-dropdown .p-dropdown-items-wrapper::-webkit-scrollbar {
   width: 8px;
@@ -134,7 +125,6 @@ border: none !important;
   text-shadow: 0 4px 18px rgba(0,0,0,0.6);
 }
 
-
 .paryar{
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
@@ -142,6 +132,4 @@ border: none !important;
   margin: 12px 0;
   border: 1px solid rgba(255,255,255,0.03);
   backdrop-filter: blur(4px);
-
- 
 }

@@ -7,7 +7,6 @@ import "@fontsource/cairo";
 import {
   createTheme,
   ThemeProvider,
-
 } from "@mui/material";
 import { Dropdown } from 'primereact/dropdown';
 import 'primereact/resources/themes/saga-blue/theme.css'; // إذا لم تكن مضافة في المشروع
@@ -117,7 +116,7 @@ const cityOptions = cities.map(c => ({ label: c.name, value: c.value }));
       <ThemeProvider theme={theme}>
         <section className={isMobile ? "pt-1 " : "mt-5 pt-5"}>
           <div className="container min">
-            <h1 className="text-center mb-4 pt-3  title">مواقيت الصلاة في اليمن</h1>
+            <h1 className={isMobile ? "text-center mb-4 pt-5 title " : " text-center mb-4 pt-3 title"}>مواقيت الصلاة في اليمن</h1>
             <div className="top-section pt-3">
               <div className={isMobile ? "row flex-column text-center" : "row align-items-center"}>
 
