@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+ direction: rtl;
+}
+body {
+  /* direction: rtl; */
+  font-family: 'Cairo', sans-serif;
+  background-image: url('/src/assets/img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: relative; /* needed so pseudo-element sits behind content */
+  z-index: 0;
+ 
+}
+
+
+ body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* غمامه/تعتيم — زود القيمة لداكن أكثر */
+  backdrop-filter: blur(2px); /* مقدار الضبابية — عدله حسب الرغبة */
+  -webkit-backdrop-filter: blur(4px);
+  pointer-events: none;
+  z-index: 0;
+}
+body > *{
+  position: relative;
+  z-index: 1;
+}
+.title{
+font-weight: bolder;
+  color: #1eec6d;
+}
+.min{
+    backdrop-filter: blur(4px);
+  max-width: 800px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.274);
+}
+.city-dropdown .p-dropdown {
+  font-weight: bold;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* نص الخيار الظاهر */
+.city-dropdown .p-dropdown-label {
+  padding: 10px 12px;
+  font-size: 18px;
+    font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+   
+}
+/* أيقونة السهم */
+.city-dropdown .p-dropdown-trigger {
+  color: #fff;
+   background: rgba(255,255,255,0.06) !important;
+}
+
+/* لوحة الخيارات (panel) */
+.rtl-dropdown.p-dropdown-panel {
+  direction: rtl;
+  backdrop-filter: blur(2px); 
+ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 8px;
+  padding: 6px 8px;
+  min-width: 180px;
+  box-shadow: 0 12px 30px rgba(2,6,23,0.6);
+  border: none !important;
+}
+.rtl-dropdown.p-dropdown-panel {
+  margin-top: 0 !important;        /* يلغي أي margin افتراضي */
+  transform: translateY(0) !important; /* يلغي أي translate يسبب فجوة */
+  padding-top: 6px !important;     /* قلل أو ازل حسب الحاجة */
+}
+
+/* العناصر داخل القائمة */
+.rtl-dropdown .p-dropdown-item {
+  padding: 10px 14px;
+  color: #fff;
+ background: transparent;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 6px;
+  border: none !important;
+  margin-right: 20px;
+}
+
+/* العنصر المحدد */
+.rtl-dropdown .p-dropdown-item.p-highlight {
+  background: rgba(20, 22, 21, 0.452);
+  font-weight: bold;
+  color: #fff;
+} 
+
+.rtl-dropdown.p-dropdown-panel .p-dropdown-item:hover {
+  background: rgba(11, 151, 34, 0.521);
+  color: #fff;
+  font-weight: bold;
+border: none !important;
+}
+/* حدود وارتفاع قائمة قابلة للتمرير */
+.rtl-dropdown .p-dropdown-items-wrapper {
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* تخصيص شريط التمرير (WebKit) */
+.rtl-dropdown .p-dropdown-items-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.rtl-dropdown .p-dropdown-items-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 8px;
+}
+/* تحسين مظهر الوقت */
+.time h2, .time h3 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.6);
+}
+
+
+.paryar{
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(4px);
+
+ 
+}
